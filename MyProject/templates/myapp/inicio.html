@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Titulo da Página</title>
+{% endblock %}
+{% block content %}
+{% include "partials/_header.html"%}
+{% include "partials/_alertas.html"%}
+  {% include 'partials/_cardsVisualizar.html' %}
+    <!--Footer Início-->  
+  {% include 'partials/_footer.html' %}
+  <!--Footer Fim-->  
+{% endblock %}

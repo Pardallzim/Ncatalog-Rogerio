@@ -1,0 +1,17 @@
+{% load static %}
+<div class="row">
+{% for item in itens %}
+<div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="gallery-item h-100">
+        <img src="{{ item.path.url }}" class="img-fluid" height="300px" width="300px" alt="{{ item.name }}">
+        <div class="gallery-links d-flex align-items-center justify-content-center">
+            <br>
+            <strong>{{item.name}}</strong>
+            <br><br><br>
+            <a href="" class="btn btn-primary">curtir</a>
+            <a href="" class="btn btn-primary">comentar</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
