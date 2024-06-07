@@ -1,12 +1,17 @@
 {% load static %}
-<footer class=" justify-content-center py-2 my-5">
-     
-    <div>
+<footer class=" justify-content-center py-2 my-5 row d-flex" style="align-items: center;">
+    <div class="col-4" style="padding-left: 50px;">
+        <img style="border-radius: 50%;" src="{% static 'assets/img/ncatalog.jpg' %}" alt="" height="70px" width="70px">
+        <p style="margin-top: 10px; margin-bottom: 10px;"></p>
+        <img style="border-radius: 50%;" src="{% static 'assets/img/facebook.png' %}" alt="" height="70px" width="70px">
+        <p style="margin-top: 10px; margin-bottom: 10px;"></p>
+        <img style="border-radius: 50%;" src="{% static 'assets/img/instagram.jpeg' %}" alt="" height="70px" width="70px">
+    </div> 
+    <div class="col-4">
         <h6 class="text-center fw-light">Copyrigth-2024</h6>
     </div>
-    <div>
-        <img src="{% static 'assets/img/ncatalog.jpg' %}" alt="" height="100px" width="100px">
-        <img src="{% static 'assets/img/facebook.png' %}" alt="" height="100px" width="100px">
-        <img src="{% static 'assets/img/instagram.jpeg' %}" alt="" height="100px" width="100px">
+    <div class="col-4">
+
     </div>
+    
 </footer>

@@ -1,6 +1,12 @@
 {% load static %}
-<header class=" justify-content-center py-2 my-5">
-    <img src="{% static 'assets/img/ncatalog.jpg' %}" alt="" height="200px" width="200px">
-    <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
-    <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+<header class=" justify-content-center py-2 row d-flex" style="margin-bottom: 50px; align-items: center;">
+    <div class="col-4">
+        <img src="{% static 'assets/img/ncatalog.jpg' %}" alt="" height="100px" width="100px">
+    </div>  
+    <div class="col-4 text-center">
+        <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+    </div>
+    <div class="col-4 text-end" style="padding-right: 20px;">
+        <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+    </div>
 </header>
